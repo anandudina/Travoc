@@ -1,76 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travoc</title>
     <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- <nav class="flex items-center">
-      <h3 class="me-6">Travoc</h3>
-      <ul class="flex gap-6">
-        <li class="list-none ">
-          <a class="text-black" href="#">Home</a>
-        </li>
-        <li class="list-none ">
-          <a class="text-black" href="#">Destination</a>
-        </li>
-        <li class="list-none ">
-          <a class="text-black" href="#">Flight</a>
-        </li>
-        <li class="list-none ">
-          <a class="text-black" href="#">Booking</a>
-        </li>
-        <li class="list-none ">
-          <a class="text-black" href="#">Blog</a>
-        </li>
-        <li class="list-none">
-          <a class="text-black" href="#">Contact Us</a>
-        </li>
-      </ul>
-    </nav> -->
-    <div class="min-h-screen px-28 py-5 relative">
+    <div class="px-28 py-5">
+      <!-- navbar -->
       <nav class="flex items-center p-2">
-        <h2 class="text-2xl">Travoc</h2>
+        <h2 class="text-3xl cursor-pointer">Travoc</h2>
         <ul class="flex-1 text-center">
           <li class="list-none inline-block">
-            <a class="text-black px-2" href="#">Home</a>
+            <a class="text-lg text-black px-2 hover:text-blue-900" href="#"
+              >Home</a
+            >
           </li>
           <li class="list-none inline-block">
-            <a class="text-black px-2" href="#">Destination</a>
+            <a class="text-lg hover:text-blue-950 text-black px-2" href="#"
+              >Destination</a
+            >
           </li>
           <li class="list-none inline-block">
-            <a class="text-black px-2" href="#">Flight</a>
+            <a class="text-lg hover:text-blue-950 text-black px-2" href="#"
+              >Flight</a
+            >
           </li>
           <li class="list-none inline-block">
-            <a class="text-black px-2" href="#">Booking</a>
+            <a class="text-lg hover:text-blue-950 text-black px-2" href="#"
+              >Booking</a
+            >
           </li>
           <li class="list-none inline-block">
-            <a class="text-black px-2" href="#">Blog</a>
+            <a class="text-lg hover:text-blue-950 text-black px-2" href="#"
+              >Blog</a
+            >
           </li>
           <li class="list-none inline-block">
-            <a class="text-black px-2" href="#">Contact Us</a>
+            <a class="text-lg hover:text-blue-950 text-black px-2" href="#"
+              >Contact Us</a
+            >
           </li>
         </ul>
         <a
-          class="no-underline px-6 py-2 bg-gray-400 hover:bg-gray-300 rounded text-sm me-3"
+          class="no-underline px-6 py-2 bg-gray-400 hover:bg-gray-300 rounded text-sm me-3 duration-500"
           href="#"
           >Log In</a
         >
         <a
-          class="text-white no-underline px-6 py-2 bg-blue-950 hover:bg-blue-900 rounded text-sm"
+          class="text-white no-underline px-6 py-2 bg-blue-950 hover:bg-blue-900 duration-500 rounded text-sm"
           href="#"
           >Sign In</a
         >
       </nav>
 
       <!-- Home -->
-      <div class="grid grid-cols-2 gap-16 py-24">
-        <div>
-          <h1 class="text-6xl">Travel Memories<br />You"ll Never Forget</h1>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 py-24">
+        <div class="mt-10">
+          <h1 class="text-3xl lg:text-6xl md:text-5xl sm:text-4xl">
+            Travel Memories<br />You"ll Never Forget
+          </h1>
           <p class="mt-4 text-lg">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint iusto
             a, doloribus voluptatem ab eius cumque rem laudantium ipsa sit
@@ -79,79 +81,268 @@
           </p>
 
           <a
-            class="mt-4 inline-block text-white no-underline px-6 py-2 bg-blue-950 hover:bg-blue-900 rounded-md text-sm me-4"
+            class="mt-4 inline-block text-white no-underline px-6 py-2 bg-blue-950 hover:bg-blue-900 rounded-md text-sm me-4 duration-500"
             href=""
             >Find Out More</a
           >
         </div>
-        <div>
-          <img src="./images/superman-overlay.jpg" alt="" />
+        <div data-aos="zoom-in" data-aos-duration="1000">
+          <img src="./images/home-overlay.jpg" alt="" />
         </div>
       </div>
-      <!-- Find Destination -->
-      <div class="text-center">
-        <h1 class="text-5xl text-center">Find Your Best Destination</h1>
+    </div>
+    <!-- Find Destination -->
+    <div class="mt-20 text-center relative">
+      <div
+        class="backgroundImg absolute inset-0 bg-[url('/images/travel-removebg.png')] bg-center bg-cover z-0"
+      ></div>
+      <div class="relative z-10">
+        <h1 class="text-3xl lg:text-5xl md:text-4xl sm:text-3xl">
+          Find Your Best Destination
+        </h1>
         <p class="mt-4 text-lg text-center">
           We have more than 2000 destinations you can choose
         </p>
         <a
-          class="mt-4 inline-block text-white no-underline px-32 py-2 bg-blue-950 hover:bg-blue-900 rounded-md text-sm me-4"
+          class="mt-4 inline-block text-white no-underline px-32 py-2 bg-blue-950 hover:bg-blue-900 rounded-md text-sm me-4 duration-500"
           href=""
           >Search Destination</a
         >
         <div
-          class="mt-10 container mx-auto flex justify-center bg-gray-300 px-10 py-10 h-96"
+          class="mt-10 container mx-auto flex justify-center gap-6 px-10 py-10 h-auto flex-wrap"
         >
-          <div class="flex justify-center ">
+          <div
+            class="flex justify-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <img
-              class="w-100 ms-8 rotate-6 me-6 rounded-2xl border-4"
-              src="./images/card.jfif"
-              alt="card1"
+              class="w-64 h-64 object-cover rotate-6 rounded-2xl border-4"
+              src="./images/greece.jpg"
+              alt="greece"
             />
           </div>
-          <div class="flex justify-center">
+          <div
+            class="flex justify-center"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
             <img
-              class="w-100 me-12 -rotate-12 rounded-2xl border-4"
-              src="./images/card.jfif"
-              alt="card1"
+              class="w-64 h-64 object-cover -rotate-12 rounded-2xl border-4"
+              src="./images/ballon.jpg"
+              alt="ballon"
             />
           </div>
-          <div class="flex justify-center">
+          <div
+            class="flex justify-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <img
-              class="w-100 me-8 rotate-6 rounded-2xl border-4"
-              src="./images/card.jfif"
-              alt="card1"
+              class="w-64 h-64 object-cover rotate-6 rounded-2xl border-4"
+              src="./images/china.jpg"
+              alt="china"
             />
           </div>
-          <div class="flex justify-center">
+          <div
+            class="flex justify-center"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
             <img
-              class="w-100 me-6 -rotate-12 rounded-2xl border-4"
-              src="./images/card.jfif"
-              alt="card1"
+              class="w-64 h-64 object-cover -rotate-12 rounded-2xl border-4"
+              src="./images/beach.jpg"
+              alt="beach"
             />
           </div>
-        </div>
-        <div class="text-centerr">
-          <a class="hover:underline" href="#">See more</a>
         </div>
       </div>
-      <!-- trial image bg  -->
-       <div>
-        <img class=" opacity-20 " src="./images/travel-removebg.png" alt="bg">
-       </div>
-    </div>
-    <footer class="bg-blue-900">
-      <div class="container px-28 py-5">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ratione,
-            explicabo repellendus culpa, beatae, sunt error pariatur commodi
-            adipisci exercitationem mollitia quam unde a dolore. Fugit qui nisi quae
-            deleniti.
-          </p>
-          <div class="grid grid-cols-4 gap-10 py-8">
 
+      <div class="text-center mb-2">
+        <a class="hover:text-blue-900" href="#">See more</a>
+      </div>
+    </div>
+
+    <!-- Best Vacation Plan -->
+    <div class="mt-24 text-center">
+      <h1 class="text-3xl sm:text-5xl">Best Vacation Plan</h1>
+      <p class="mt-4 text-base sm:text-lg">
+        Plan your perfect vacation with our travel agency. Choose among <br />
+        hundreds of all-inclusive offers!
+      </p>
+
+      <div class="mt-10 flex flex-wrap justify-center gap-6 px-6 py-10">
+        <div
+          class="flex flex-col items-center bg-gray-400 rounded-xl shadow-lg w-64 hover:scale-110 duration-500"
+        >
+          <div class="w-full aspect-square overflow-hidden rounded-t-xl">
+            <img
+              src="./images/italy.jpg"
+              alt="italy"
+              class="w-full h-full object-cover"
+            />
           </div>
+          <h4
+            class="w-full text-base flex justify-between items-center px-4 py-2"
+          >
+            <span class="font-medium">Rome, Italy</span>
+            <span class="font-semibold">&#36;657k</span>
+          </h4>
+          <div class="w-full flex justify-between items-center px-4 pb-4">
+            <div class="text-sm font-thin">
+              <i class="fa-brands fa-telegram"></i>
+              <span class="font-thin">7 Day Trip</span>
+            </div>
+            <div class="text-sm flex items-center">
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <span class="font-thin"> 4.6</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center bg-gray-400 rounded-xl shadow-lg w-64 hover:scale-110 duration-500"
+        >
+          <div class="w-full aspect-square overflow-hidden rounded-t-xl">
+            <img
+              src="./images/taj-mahal.avif"
+              alt="taj-mahal"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <h4
+            class="w-full text-base flex justify-between items-center px-4 py-2"
+          >
+            <span class="font-medium">India, Delhi</span>
+            <span class="font-semibold">&#36;527k</span>
+          </h4>
+          <div class="w-full flex justify-between items-center px-4 pb-4">
+            <div class="text-sm font-thin">
+              <i class="fa-brands fa-telegram"></i>
+              <span class="font-thin">7 Day Trip</span>
+            </div>
+            <div class="text-sm flex items-center">
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <span class="font-thin"> 4.7</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center bg-gray-400 rounded-xl shadow-lg w-64 hover:scale-110 duration-500"
+        >
+          <div class="w-full aspect-square overflow-hidden rounded-t-xl">
+            <img
+              src="./images/chicago.jpg"
+              alt="chicago"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <h4
+            class="w-full text-base flex justify-between items-center px-4 py-2"
+          >
+            <span class="font-medium">USA, Chicago</span>
+            <span class="font-semibold">&#36;527k</span>
+          </h4>
+          <div class="w-full flex justify-between items-center px-4 pb-4">
+            <div class="text-sm font-thin">
+              <i class="fa-brands fa-telegram"></i>
+              <span class="font-thin">9 Day Trip</span>
+            </div>
+            <div class="text-sm flex items-center">
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <span class="font-thin"> 4.4</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a class="hover:underline text-white" href="#">See more</a>
+      </div>
+    </div>
+
+    <!-- Our Blog -->
+    <div class="mt-24 text-center">
+      <h1 class="text-5xl text-center">Our Blog</h1>
+      <p class="mt-4 text-lg text-center">
+        An Insight the incridible experience in the world
+      </p>
+      <div class="grid grid-cols-1 lg:grid-cols-2 g-4 mt-16">
+        <div data-aos="zoom-in" data-aos-duration="1000">
+          <img src="./images/kashmir.jpg" alt="kashmir" />
+        </div>
+        <div class="mt-24 ms-16">
+          <h3 class="text-2xl text-left">Beautiful Kashmir Let's Travel</h3>
+          <p class="text-left mt-4 leading-8">
+            We are ready to help you build and also realize the room
+            <br />design that you dream of, with our experts and also the best
+            <br />category recommendations from us.
+          </p>
+          <div class="mt-4 text-left">
+            <a class="hover:underline" href="#"
+              >Read more<span class="no-underline"> &#8594;</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="mt-24 bg-black text-white">
+      <div class="w-full px-6 md:px-16 lg:px-28 py-10">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-gray-700"
+        >
+          <div>
+            <h3 class="font-semibold">Powered By</h3>
+            <p class="text-sm text-gray-400 mt-4 hover:text-white cursor-pointer">Hola Turistor</p>
+          </div>
+          <div>
+            <h3 class="font-semibold">Call Center</h3>
+            <p class="text-sm text-gray-400 mt-4 hover:text-white cursor-pointer">International call center</p>
+          </div>
+          <div>
+            <h3 class="font-semibold">Subscribe to our newsletter</h3>
+            <form class="relative mt-4 max-w-xs">
+              <input
+                type="text"
+                class="w-full text-sm rounded-md ps-3 pe-24 py-2 bg-gray-900 text-gray-400 focus:outline-none"
+                placeholder="Email address"
+              />
+              <button
+                class="absolute top-1 right-1 text-sm bg-gray-700 hover:bg-gray-600 text-white px-4 py-1 rounded-md"
+              >
+                Join Now
+              </button>
+            </form>
+          </div>
+          <div>
+            <h3 class="font-semibold">Download our mobile app</h3>
+          </div>
+        </div>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 text-gray-400 text-sm"
+        >
+          <div class="flex justify-center md:justify-start">
+            <p><span class="hover:text-white cursor-pointer">Privacy Policy</span> <span class="ms-6 hover:text-white cursor-pointer">Cookies</span></p>
+          </div>
+          <div class="flex justify-center">
+            <p>&copy; All Rights Reserved 2025</p>
+          </div>
+          <div class="flex justify-center md:justify-end items-center gap-4">
+            <span>Contact with Us</span>
+            <div class="flex gap-3">
+              <a href="#"><i class="fa-brands fa-x-twitter hover:text-white"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram hover:text-white"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook hover:text-white"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
